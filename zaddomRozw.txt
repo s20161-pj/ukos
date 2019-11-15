@@ -1,0 +1,1 @@
+cat zaddom.txt | grep -P 'no-print' | sed -e 's/<[^>]*>//g' | sed ':a;N;$!ba;s/\n/ /g'     
